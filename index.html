@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<!--A test table with merged cells-->
+<table>
+    <tr>
+        <td rowspan="2" colspan="2"></td>
+        <td colspan="2" class="appearence">Average</td>
+        <td rowspan="2" class="appearence-item"><span>Red</span> eyes</td>
+    </tr>
+    <tr>
+        <td class="appearence">height</td>
+        <td class="appearence">weight</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="appearence">Males</td>
+        <td>1.9</td>
+        <td>0.003</td>
+        <td>40%</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="appearence">Females</td>
+        <td>1.7</td>
+        <td>0.002</td>
+        <td>43%</td>
+    </tr>
+</table>
+<!--A Time Table-->
+<table>
+    <caption>Time Table</caption>
+    <tr class="hours-and-days">
+        <td rowspan="6">Hours</td>
+        <td>Mon</td>
+        <td>Tue</td>
+        <td>Wed</td>
+        <td>Thu</td>
+        <td>Fri</td>
+    </tr>
+    <tr>
+        <td>Hours</td>
+        <td>Mon</td>
+        <td>Tue</td>
+        <td>Wed</td>
+        <td>Thu</td>
+    </tr>
+    <tr>
+        <td>Science</td>
+        <td>History</td>
+        <td>English</td>
+        <td>Social</td>
+        <td>Sports</td>
+    </tr>
+    <tr>
+        <td colspan="5" class="is-lunch">Lunch</td>
+    </tr>
+    <tr>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>Maths</td>
+        <td rowspan="2">Project</td>
+    </tr>
+    <tr>
+        <td>Social</td>
+        <td>History</td>
+        <td>English</td>
+        <td>Social</td>
+    </tr>
+</table>
+<!--Empty table-->
+<table class="empty-table">
+    <tr>
+        <td colspan="6" class="empty-cells"></td>
+        <td class="size empty-cells"></td>
+        <td rowspan="3" class="large-cell empty-cells"></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="wide-cell empty-cells"></td>
+        <td rowspan="2" class="empty-cells"></td>
+        <td colspan="3" class="width empty-cells"></td>
+        <td class="empty-cells"></td>
+    </tr>
+    <tr>
+        <td rowspan="2" colspan="2" class="empty-cells"></td>
+        <td colspan="3" class="empty-cells"></td>
+        <td class="size empty-cells"></td>
+    </tr>
+    <tr>
+        <td colspan="5" class="empty-cells"></td>
+        <td class="empty-cells"></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="last-cell-size empty-cells"></td>
+        <td class="empty-cells"></td>
+        <td colspan="5" class="empty-cells"></td>
+    </tr>
+</table>
+
+<form method="post" action="#">
+    <fieldset class="about-you">
+        <legend class="heading">Коротко о себе</legend>
+        <div class="first-name">
+            <label>Имя:<input type="text" name="first-name" class="first-name-field"></label>
+        </div>
+        <div class="surname">
+            <label>Фамилия:<input type="text" name="surname" class="surname-field"></label>
+        </div>
+        <div class="gender">Пол:
+            <label><input type="radio" name="man-or-women" checked>мужской</label>
+            <label><input type="radio" name="man-or-women">женский</label>
+        </div>
+        <div class="age">Возраст:
+            <label><input type="text" name="age" class="age-field">лет
+            </label>
+        </div>
+    </fieldset>
+    
+    <fieldset class="more-about-you">
+        <legend class="heading">Подробнее о себе</legend>
+        <div class="more-details">
+            <label><input type="radio" name="gender" checked>Молодой человек</label>
+            <label><input type="radio" name="gender">Девушка</label>
+            <label><input type="text" name="birthday">Дата рождения</label>
+            <label><input type="text" name="Family status">Семейное положение</label>
+            <label><input type="text" name="social status">Социальный статус</label>
+            <label><input type="text" name="residence">Местожительcтво</label>
+        </div>
+        <div class="question">
+            <span class="different-questions">Что вы обычно делаете на выходных?</span>
+            <label><input type="checkbox">Сплю</label>
+            <label><input type="checkbox">Гуляю с друзьями</label>
+            <label><input type="checkbox">Хожу на рыбалку</label>
+            <label><input type="checkbox">Играю в игры</label>
+        </div>
+        <div>
+            <span class="different-questions">Рассказать о формах в книге, посвященной HTML:</span>
+            <label for="select-html-book"></label>
+            <select name="select-html-book" id="select-html-book">
+                <option value="Site frequency:">Site frequency:</option>
+            </select>
+        </div>
+        <div class="numbers-of-book">
+            <span class="different-questions">Сколько книг вы прочитали за свою жизнь:</span>
+            <label><input type="radio" name="numbers-of-book">0-10</label>
+            <label><input type="radio" name="numbers-of-book">11-20</label>
+            <label><input type="radio" name="numbers-of-book">21-50</label>
+            <label><input type="radio" name="numbers-of-book">50+</label>
+        </div>
+            <span class="your-comments">Ваши комментарии</span>
+            <label for="comments"><textarea name="some-text" id="comments" cols="50" rows="10" class="some-text-field"></textarea></label>
+            <label for="position"></label>
+            <select name="position" id="position" size="3">
+                <option value="1">Первая позиция</option>
+                <option value="2" selected>Вторая позиция</option>
+                <option value="3">Третья позиция</option>
+            </select>
+    </fieldset>
+    
+    <fieldset class="more-about-you">
+        <legend class="heading">И в заключении</legend>
+        <input type="text" placeholder="Это поле было введено до вас" class="some-text-line">
+        <div class="email">Email
+            <input type="email" class="mail" name="mail">
+        </div>
+        <div class="spam">
+            <span class="spam-question">Хотите подписаться на самую модную рассылку спама?</span>
+            <span class="mailing-category">Выберите категории</span>
+            <label><input type="checkbox">Оборудование</label>
+            <label><input type="checkbox">Как приготовить обеды</label>
+            <label><input type="checkbox">Заработай миллион за два дня!</label>
+        </div>
+        <div class="task">
+        <span class="is-task-difficult">На сколько сложная задача:</span>
+            <label><input type="radio" checked name="difficults">Совсем нет</label>
+            <label><input type="radio" name="difficults">Так себе</label>
+            <label><input type="radio" name="difficults">Еле справляюсь</label>
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* A test table with merged cells */
+
+table, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px 15px;
+  font-size: 16px;
+  width: 385px;
+  margin-bottom: 25px;
+}
+
+.appearence, .appearence-item {
+    text-align: center;
+    font-weight: bold;
+}
+
+.appearence-item {
+    vertical-align: top;
+}
+
+/* A Time Table--> */
+
+caption {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.hours-and-days, .is-lunch {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Empty table */
+
+.empty-table, .empty-cells {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 25px 40px;
+}
+
+.size {
+    padding: 50px 0;
+}
+
+.width {
+    padding: 0px 65px;
+}
+
+.last-cell-size {
+    padding: 40px 90px;
+}
+
+.large-cell {
+    padding: 0 75px;
+}
+
+/* Form */
+
+.about-you, .more-about-you {
+    width: 1024px;
+    display: flex;
+    border: 1px solid silver;
+    margin-bottom: 25px;
+}
+
+.heading {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.first-name, .surname, .gender, .age {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.first-name-field, .surname-field, .age-field {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.more-details, .question, .numbers-of-book {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-right: 5px;
+    border-radius: 2px;
+    border: 1px solid silver;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.different-questions {
+    display: block;
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.your-comments {
+    display: block;
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.some-text-field {
+    margin-bottom: 25px;
+}
+
+.some-text-line {
+    width: 250px;
+    margin-bottom: 25px;
+}
+
+.spam-mailing {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.mailing-category {
+    display: block;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.spam, .task {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.email {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mail {
+    display: block;
+}
+
+.is-task-difficult {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.spam-question {
+    font-size: 16px;
+    font-weight: bold;
+}
+   
